@@ -1,0 +1,47 @@
+{
+  "name": "drakonis-guard",
+  "version": "1.0.0",
+  "description": "Flexible access control system for Node.js applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build",
+    "start:dev": "ts-node src/index.ts",
+    "lint": "eslint src/ test/",
+    "clean": "rm -rf dist node_modules"
+  },
+  "keywords": [
+    "access-control",
+    "permissions",
+    "rbac",
+    "authorization"
+  ],
+  "author": "Abdellah Chehri",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/your-package-name.git"
+  }
+}
