@@ -1,10 +1,10 @@
-import { PolicyBuilder } from "./_ core/policy-builder";
+import { PolicyBuilder } from "./core/policy-builder";
 
-import { AccessControl } from "./_ core/access-control";
+import { AccessControl } from "./core/access-control";
 
-import type { PermissionCheck } from "./_ core/types";
+import type { PermissionCheck } from "./core/types";
 
-import type { PolicyDefinition } from "./_ core/types";
+import type { PolicyDefinition } from "./core/types";
 
 export { PolicyBuilder, AccessControl };
 
