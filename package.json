@@ -1,6 +1,6 @@
 {
   "name": "drakonis-guard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flexible access control system for Node.js applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
