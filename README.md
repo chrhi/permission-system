@@ -1,11 +1,11 @@
-# 🐉 Drakonis Guard
+# Drakonis Guard
 
 **Mythical Access Control System for Node.js Applications**  
 Inspired by ancient dragon guardians, enforce your application's permissions with mythical precision.
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 npm install drakonis-guard
@@ -13,7 +13,7 @@ npm install drakonis-guard
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```typescript
 import { AccessControl, PolicyBuilder } from "drakonis-guard";
@@ -46,9 +46,9 @@ guardian.hasPermission(user, "dragon", "ride", dragon); // true
 
 ---
 
-## 🔥 Core Concepts
+## Core Concepts
 
-### 1️⃣ Policy Configuration
+### 1. Policy Configuration
 
 Define your access rules using the fluent builder:
 
@@ -66,7 +66,7 @@ const policy = new PolicyBuilder<User>()
   .build();
 ```
 
-### 2️⃣ Permission Checks
+### 2. Permission Checks
 
 Combine simple rules and magical conditions:
 
@@ -82,7 +82,7 @@ Combine simple rules and magical conditions:
 })
 ```
 
-### 3️⃣ Access Control Instance
+### 3. Access Control Instance
 
 Create your realm's guardian:
 
@@ -95,9 +95,9 @@ guardian.hasPermission(user, "treasure", "claim", ancientRelic);
 
 ---
 
-## 🔮 Advanced Sorcery
+## Advanced Features
 
-### 🏅 Multiple Roles
+### Multiple Roles
 
 ```typescript
 // Users can have multiple roles
@@ -109,7 +109,7 @@ const user = {
 guardian.hasPermission(user, "library", "transcribe"); // Checks all roles
 ```
 
-### 🎭 Optional Data
+### Optional Data
 
 ```typescript
 // Data-free checks (uses boolean rules only)
@@ -119,7 +119,7 @@ guardian.hasPermission(user, "tavern", "enter");
 guardian.hasPermission(user, "quest", "accept", currentQuest);
 ```
 
-### 🔥 Custom User Types
+### Custom User Types
 
 ```typescript
 type Mage = {
@@ -139,9 +139,9 @@ const policy = new PolicyBuilder<Mage>()
 
 ---
 
-## 🏛️ Best Practices
+## Best Practices
 
-### 🔒 Start Restrictive
+### Start Restrictive
 
 "Better to deny a dragon than unleash chaos."
 
@@ -153,7 +153,7 @@ const policy = new PolicyBuilder()
   .can({ "*": false });
 ```
 
-### ⌨️ TypeScript First
+### TypeScript First
 
 Leverage full type safety:
 
@@ -165,7 +165,7 @@ Leverage full type safety:
   })
 ```
 
-### 🏰 Realm Segmentation
+### Realm Segmentation
 
 Organize by domain:
 
@@ -175,19 +175,19 @@ function configureTavernRules(builder: PolicyBuilder) {
 }
 ```
 
-### 🚨 Error Handling
+### Error Handling
 
 ```typescript
 try {
   guardian.hasPermission(invalidUser, "artifact", "summon");
 } catch (error) {
-  console.error("🛡️ Guardian blocked forbidden magic:", error);
+  console.error("Guardian blocked forbidden magic:", error);
 }
 ```
 
 ---
 
-## 📜 Real-World Example: Blog Platform
+## Real-World Example: Blog Platform
 
 ```typescript
 type BlogUser = { id: string; isPremium: boolean };
@@ -216,7 +216,7 @@ const blogPolicy = new PolicyBuilder<BlogUser>()
 
 ---
 
-## 🛠 Contribution Scroll
+## Contribution
 
 Join our guild of code smiths!  
 Read our **[Contribution Guidelines](./CONTRIBUTING.md)** to help sharpen the dragon's claws.
@@ -225,4 +225,4 @@ Read our **[Contribution Guidelines](./CONTRIBUTING.md)** to help sharpen the dr
 
 > "Beware the guardian's gaze - for it sees all, permits only what is right."
 
-📜 **MIT License** © 2024 Abdellah Chehri
+**MIT License** © 2024 Abdellah Chehri
